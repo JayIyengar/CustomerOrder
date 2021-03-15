@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>f787ddb0-1420-4f87-90af-86cab61ec62f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <RootNamespace>CustomerOrder.API</RootNamespace>
+    <AssemblyName>CustomerOrder.API</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerOrder.Core\CustomerOrder.Core.csproj" />
+    <ProjectReference Include="..\CustomerOrder.DataAccess\CustomerOrder.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
